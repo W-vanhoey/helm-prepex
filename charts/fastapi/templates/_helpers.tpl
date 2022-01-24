@@ -1,5 +1,3 @@
-# Helper functions for Helm charts
-
 {{/* vim: set filetype=mustache: */}}
 {{/*
 Expand the name of the chart.
