@@ -1,5 +1,3 @@
-# The Kubernetes service that will be created
-
 apiVersion: v1
 kind: Service
 metadata:
