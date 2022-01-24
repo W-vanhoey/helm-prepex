@@ -1,8 +1,9 @@
 replicaCount: 2
 
 image:
-  repository: ghcr.io/w-vanhoey/2021-2022-mlopsathome-fastapi-prepEx # You can keep this on my image, because of the Pull Secrets
-  tag: latest
+  repository: ghcr.io/nathansegers/fastapi-intro 
+  # You can keep this on my image, because of the Pull Secrets
+  tag: v1.0.0
 
 nameOverride: "hoey-fastapi-prepex"
 fullNameOverride: "hoey-fastapi-prepex-demo"
