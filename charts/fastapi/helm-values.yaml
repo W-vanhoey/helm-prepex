@@ -9,7 +9,7 @@ fullNameOverride: "nathan-fastapi-demo"
 
 serviceAccount:
     create: true
-    name: nathan-helm-service-account ## This is a name you can choose yourself
+    name: helm-service-account ## This is a name you can choose yourself
 
 ## Keep these empty for the first try.
 imagePullSecrets: [] # Here you can fill in your own Pull Secret if you do want to work with your own repository
