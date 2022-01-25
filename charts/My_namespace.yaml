@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vanhoey-wim-h-prepex # only lowercase chars allowed
+  annotations:
+    field.cattle.io/projectId: local:p-w97xr
+  labels:
+    field.cattle.io/projectId: p-w97xr
