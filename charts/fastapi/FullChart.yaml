@@ -1,0 +1,81 @@
+---
+# Source: fastapi-example/templates/serviceaccounts.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: helm-service-account
+  labels:
+    app.kubernetes.io/name: nathan-fastapi
+    helm.sh/chart: fastapi-example-1.0.0
+    app.kubernetes.io/instance: RELEASE-NAME
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+---
+# Source: fastapi-example/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: RELEASE-NAME-nathan-fastapi
+  labels:
+    app.kubernetes.io/name: nathan-fastapi
+    helm.sh/chart: fastapi-example-1.0.0
+    app.kubernetes.io/instance: RELEASE-NAME
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: nathan-fastapi
+    app.kubernetes.io/instance: RELEASE-NAME
+---
+# Source: fastapi-example/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: RELEASE-NAME-nathan-fastapi
+  labels:
+    app.kubernetes.io/name: nathan-fastapi
+    helm.sh/chart: fastapi-example-1.0.0
+    app.kubernetes.io/instance: RELEASE-NAME
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: nathan-fastapi
+      app.kubernetes.io/instance: RELEASE-NAME
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: nathan-fastapi
+        app.kubernetes.io/instance: RELEASE-NAME
+    spec:
+      serviceAccountName: helm-service-account
+      securityContext:
+        null
+      containers:
+        - name: fastapi-example
+          securityContext:
+            null
+          image: "ghcr.io/nathansegers/fastapi-intro:v1.0.0"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {}

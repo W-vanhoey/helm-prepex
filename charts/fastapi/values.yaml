@@ -1,5 +1,3 @@
-# Contains values that can be overridden
-
 # Default values for example.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -44,3 +42,4 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+

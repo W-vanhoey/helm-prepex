@@ -1,11 +1,11 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: ghcr.io/nathansegers/fastapi-intro # You can keep this on my image, because of the Pull Secrets
   tag: v1.0.0
 
 nameOverride: "nathan-fastapi"
-fullNameOverride: "nathan-fastapi-demo"
+fullNameOverride: "nathan-fastapi-demo2"
 
 serviceAccount:
     create: true
