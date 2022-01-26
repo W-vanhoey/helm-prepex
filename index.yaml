@@ -577,4 +577,19 @@ entries:
     urls:
     - https://github.com/W-vanhoey/helm-prepex/releases/download/fastapi-example-1.0.0/fastapi-example-1.0.0.tgz
     version: 1.0.0
+  fastapi-oeioei:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-01-26T15:35:19.194715219Z"
+    description: A Helm chart for Kubernetes that will deploy a FastAPI
+    digest: 4887dc4209e87c1aef0222d069d4fecd7e6e6faf1991f58f8f4c5dc9dfd20a2f
+    maintainers:
+    - email: wimpie@howest.be
+      name: wvh
+    name: fastapi-oeioei
+    sources:
+    - https://github.com/w-vanhoey/helm-prepex
+    urls:
+    - https://github.com/W-vanhoey/helm-prepex/releases/download/fastapi-oeioei-1.2.0/fastapi-oeioei-1.2.0.tgz
+    version: 1.2.0
 generated: "2019-12-08T02:57:21.985425597Z"
