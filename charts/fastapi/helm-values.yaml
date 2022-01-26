@@ -18,7 +18,7 @@ serviceAccount:
 ## Private repository 
 ##------------------------------------
 nodeSelector:
-   kubernetes.io/hostname: "vanhoey-wim"    # Name of the Project (or Namespace)
+   kubernetes.io/hostname: "vanhoey-wim"    # Name of the Project?
    # or
    # nodeName: "vanhoey-wim"
    #kubernetes.io/os: "linux"
