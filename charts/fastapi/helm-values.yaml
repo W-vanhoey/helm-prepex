@@ -5,8 +5,8 @@ image:
     tag: latest
 ##  tag: v1.0
 
-nameOverride: "hoey-fastapi-prepex"
-fullNameOverride: "hoey-fastapi-prepex-de"
+nameOverride: "hoey-fastapi-prepex2"
+fullNameOverride: "hoey-fastapi-prepex2-de"
 
 serviceAccount:
     create: true
