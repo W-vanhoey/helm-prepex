@@ -1,5 +1,6 @@
-# Notes that will be shown when the Helm chart is installed
 # 26 jan 2022 14u34
+# Notes that will be shown when the Helm chart is installed
+
 
 1. Get the application URL by running these commands:
 {{- if contains "NodePort" .Values.service.type }}
