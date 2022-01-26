@@ -551,6 +551,20 @@ entries:
   fastapi-example:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2022-01-26T11:02:01.328465161Z"
+    description: A Helm chart for Kubernetes that will deploy a FastAPI
+    digest: a8e2941f1f41ba98c13f0c01a5ac2b84665339093a5e177c66de35559a1bfe76
+    maintainers:
+    - email: wimpie@howest.be
+      name: wvh
+    name: fastapi-example
+    sources:
+    - https://github.com/w-vanhoey/helm-prepex
+    urls:
+    - https://github.com/W-vanhoey/helm-prepex/releases/download/fastapi-example-1.2.0/fastapi-example-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2022-01-24T15:36:06.446701478Z"
     description: A Helm chart for Kubernetes that will deploy a FastAPI
     digest: f14a695b940709931da108945a3ceb50b0adfb28e74a6b954052c8ec4e6c6559
