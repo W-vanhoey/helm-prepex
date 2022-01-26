@@ -580,6 +580,20 @@ entries:
   fastapi-oei:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2022-01-26T18:30:37.918781995Z"
+    description: Helm chart for Kubernetes => deploy a FastAPI
+    digest: c035b59494de31b47f2e5dad647330f0efbb66869fdb67ee66ea099cba7837ac
+    maintainers:
+    - email: wimpie@howest.be
+      name: wimpie
+    name: fastapi-oei
+    sources:
+    - https://github.com/w-vanhoey/helm-prepex
+    urls:
+    - https://github.com/W-vanhoey/helm-prepex/releases/download/fastapi-oei-1.4.0/fastapi-oei-1.4.0.tgz
+    version: 1.4.0
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2022-01-26T17:55:24.092397624Z"
     description: Helm chart for Kubernetes => deploy a FastAPI
     digest: 172ac77e324441f763b528a2a1157cbca145f732e336a2cfecc3807afc0eb648
