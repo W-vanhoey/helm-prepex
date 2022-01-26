@@ -4,7 +4,7 @@ description: Helm chart for Kubernetes => deploy a FastAPI
 maintainers:
   - email: wimpie@howest.be
     name: wimpie
-name: fastapi-oeioei
+name: fastapi-oei
 sources:
   - https://github.com/nathansegers/2021-2022-mlops-fastapi-nathansegers
 version: 1.0.0
