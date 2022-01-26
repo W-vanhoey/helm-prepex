@@ -4,7 +4,7 @@ description: A Helm chart for Kubernetes that will deploy a FastAPI
 maintainers:
   - email: wimpie@howest.be
     name: wvh
-name: fastapi-example
+name: fastapi-oeioei
 sources:
   - https://github.com/w-vanhoey/helm-prepex
 version: 1.2.0
