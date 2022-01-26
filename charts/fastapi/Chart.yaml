@@ -8,5 +8,3 @@ name: fastapi-example
 sources:
   - https://github.com/w-vanhoey/helm-prepex
 version: 1.2.0
-
-# Contains the info of your chart
