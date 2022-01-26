@@ -2,11 +2,11 @@ apiVersion: v2
 appVersion: "1.0"
 description: A Helm chart for Kubernetes that will deploy a FastAPI
 maintainers:
-  - email: nathan.segers@howest.be
-    name: Nathan Segers
+  - email: wimpie@howest.be
+    name: wvh
 name: fastapi-example
 sources:
-  - https://github.com/nathansegers/2021-2022-mlops-fastapi-nathansegers
+  - https://github.com/w-vanhoey/helm-prepex
 version: 1.0.0
 
 # Contains the info of your chart
