@@ -2,10 +2,10 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/w-vanhoey/fastapi-prepex  # Package ref / You can keep this on my image, because of the Pull Secrets (public)
-  tag: v1.3 #tag: latest ##  tag: v1.0                   # INDENTATION IS CRITICAL
+  tag: v1.4 #tag: latest ##  tag: v1.0                   # INDENTATION IS CRITICAL # USE YAML VALIDATOR IN CASE OF TROUBLE
 
-nameOverride: "hoey-fastapi-prepex2"
-fullNameOverride: "hoey-fastapi-prepex2-de"
+nameOverride: "hoey-fastapi-prepex3"
+fullNameOverride: "hoey-fastapi-prepex3-de"
 
 serviceAccount:
     create: true
